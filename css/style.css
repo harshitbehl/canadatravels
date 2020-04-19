@@ -230,12 +230,26 @@ header {
     justify-content: center;
 }
 
-.showcase-text-top .text-lines {
+.text-lines {
     width: 15%;
     border-top: 1px solid white;
     transform: translateY(15px);
     margin: 0 20px;
+    animation-name: showcaseTextLines;
+    /* animation-delay: 1s; */
+    animation-iteration-count: 1;
+    animation-duration: 10s;
 }
+
+@keyframes showcaseTextLines {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 15%;
+    }
+}
+
 
 .showcase-paragraph {
     font-family: 'Dancing Script', cursive;
@@ -294,26 +308,64 @@ header {
 
 
 /* ------------------------------------------------------ */
-
-
 /* ------------------DESTINATION SECTION----------------- */
-
-
 /* ------------------------------------------------------ */
 
 .destination-section {
-    height: 100vh;
+    /* height: 100vh; */
     text-align: center;
     padding: 50px 0;
 }
 
+.destination-grid-container {
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+    grid-gap: 50px;
+    margin-top: 50px;
+}
+
+.destination-grid-container div img {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
 
 /* ------------------------------------------------------ */
+/* ---------------------VIDEO SECTION-------------------- */
+/* ------------------------------------------------------ */
 
+.video-section {
+    height: 300px;
+    width: 100vw;
+}
+.video-container {
+    height: 100%;
+    width: 100%;
+}
 
+video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+/* ------------------------------------------------------ */
+/* -------------------ARTICLES SECTION------------------- */
+/* ------------------------------------------------------ */
+
+.articles-section {
+    height: 100vh;
+}
+
+/* ------------------------------------------------------ */
+/* -------------------PACKAGES SECTION------------------- */
+/* ------------------------------------------------------ */
+
+.packages-section {
+    height: 100vh;
+}
+
+/* ------------------------------------------------------ */
 /* --------------------FOOTER SECTION-------------------- */
-
-
 /* ------------------------------------------------------ */
 
 footer {
