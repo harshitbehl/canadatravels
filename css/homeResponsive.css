@@ -24,6 +24,87 @@
     .main-nav-dropdown li a {
         font-size: 0.8rem;
     }
+
+    /* ---------------DESTINATIONS SECTION-------------- */
+
+    .destination-grid-container {
+        grid-gap: 30px;
+    }
+
+    .destination-overlay {
+        height: 35%;
+    }
+
+    .destination-overlay .destination-country {
+        font-size: 1rem;
+        padding: 20px 0 10px 0;
+    }
+
+    .destination-overlay p:nth-child(2) {
+        padding: 0 20px 20px 20px;
+        /* line-height: 1.5; */
+        font-size: 0.7rem;
+    }
+
+    .destination-overlay a {
+        font-size: 0.6rem;
+        transform: scale(0.9);
+    }
+
+    /* -----------------ARTICLES SECTION---------------- */
+
+    .articles-grid-container {
+        grid-template: repeat(2, 250px)/ repeat(2, 1fr);
+        padding: 40px 0;
+    }
+
+    .articles-text-container {
+        padding: 20px;
+    }
+
+    .articles-text-container p:first-child {
+        font-size: 0.7rem;
+    }
+
+    .articles-text-container h4 {
+        padding: 10px 0;
+    }
+
+    .articles-text-container p:nth-child(3) {
+        padding-bottom: 20px;
+        font-size: 0.8rem;
+        line-height: 1.2;
+    }
+
+    .articles-text-container a {
+        font-size: 0.6rem;
+    }
+
+    /* -----------------DISCOVER SECTION---------------- */
+
+    .discover-section div p {
+        font-size: 1.7rem;
+    }
+
+    .discover-section div a {
+        font-size: 0.7rem;
+        padding: 10px 35px
+    }
+
+    /* -----------------PACKAGES SECTION---------------- */
+
+    .packages-item:nth-child(1) {
+        padding: 10px 10px 10px 0;
+    }
+
+    .packages-item:nth-child(2) {
+        padding: 10px 5px;
+    }
+
+    .packages-item:nth-child(3) {
+        padding: 10px 0 10px 10px;
+    }
+
     /* ------------------FOOTER SECTION----------------- */
     .footer-main {
         flex-wrap: wrap;
@@ -43,10 +124,16 @@
 /* ----------------------------------------TABLET LOW RESOLUTION--------------------------------- */
 
 @media (max-width: 768px) {
+    
     /* ---------------------HEADINGS-------------------- */
     h1 {
         font-size: 2.2rem;
     }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
     /* ------------------HEADER SECTION----------------- */
     .showcase-paragraph {
         font-size: 1.2rem;
@@ -61,6 +148,122 @@
     .showcase-btn {
         transform: scale(0.9);
     }
+
+    /* ---------------DESTINATIONS SECTION-------------- */
+
+    .destination-grid-container {
+        grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+    }
+
+    .destination-overlay {
+        height: 30%;
+    }
+
+    /* ------------------VIDEO SECTION------------------ */
+
+    .video-text-container {
+        position: absolute;
+        left: 10%;
+    }
+
+    .video-button-container {
+        left: 60%;
+    }
+
+    .video-button:link,
+    .video-button:visited {
+        font-size: 0.9rem;
+    }
+
+    /* ----------------ARTICLES SECTION----------------- */
+
+    .articles-grid-container {
+        grid-template: repeat(4, 250px)/ repeat(1, 1fr);
+        grid-gap: 50px;
+    }
+
+    .articles-grid-item:nth-child(3) {
+        grid-row: 4 / 5;
+    }
+
+    .articles-grid-item:nth-child(2) .articles-image-container {
+        order: 1;
+    }
+
+    .articles-grid-item:nth-child(4) .articles-text-container {
+        order: 1;
+    }
+
+    .articles-text-container {
+        padding: 30px;
+    }
+
+    .articles-text-container h4 {
+        padding: 10px 0 20px 0;
+    }
+
+    .articles-text-container p:nth-child(3) {
+        line-height: 1.5;
+    }
+
+    .articles-text-container a {
+        font-size: 0.7rem;
+    }
+
+    /* ----------------DISCOVER SECTION----------------- */
+
+    .discover-section div p {
+        font-size: 1.2rem;
+    }
+
+    .discover-section div a {
+        font-size: 0.6rem;
+        padding: 10px 30px;
+    }
+
+    /* -----------------PACKAGES SECTION---------------- */
+
+
+    .packages-section {
+        padding-top: 0;
+    }
+
+    .packages-text-container h3 {
+        font-size: 0.8rem;
+    }
+    
+    .packages-text-container p:nth-child(3) {
+        font-size: 0.7rem;
+        padding-bottom: 15px;
+    }
+
+    .prices-container p:nth-child(1) {
+        font-size: 0.5rem;
+    }
+
+    .prices-container p:nth-child(2) {
+        font-size: 1rem;
+    }
+
+    .packages-text-container p:nth-child(7) {
+        font-size: 0.7rem;
+    }
+
+    .packages-text-container a {
+        font-size: 0.6rem;
+    }
+
+    .landmark-icon {
+        height: 40px;
+        width: 40px;
+    }
+
+    .packages-text-container .landmark-icon::before {
+        line-height: 40px;
+        font-size: 1rem;
+    }
+
+
     /* ------------------FOOTER SECTION----------------- */
     .footer-contact p {
         font-size: 0.7rem;
@@ -150,6 +353,119 @@
     .text-lines {
         transform: translateY(7px);
     }
+
+    /* ---------------DESTINATION SECTION--------------- */
+
+    .destination-grid-container {
+        grid-template: repeat(6, 1fr) / repeat(1, 1fr);
+    }
+
+    .destination-overlay {
+        height: 30%;
+    }
+
+    .destination-overlay .destination-country {
+        font-size: 1.4rem;
+        padding: 20px;
+    }
+
+    .destination-overlay p:nth-child(2) {
+        padding: 10px 20px 20px 20px;
+        font-size: 0.9rem;
+    }
+    
+    .destination-overlay a {
+        font-size: 0.7rem;
+    }
+
+    /* -------------------VIDEO SECTION----------------- */
+
+    .video-text-container {
+        top: 40%;
+        left: 5%;
+        z-index: 3;
+    }
+
+    .video-text {
+        font-size: 1.2rem;
+    }
+
+    .video-text span {
+        font-size: 1.6rem;
+    }
+
+    .video-text span::before {
+        height: 3px;
+        width: 110px;
+    }
+
+    .video-button-container {
+        top: 45%;
+        left: 60%;
+    }
+
+    .video-button:link,
+    .video-button:visited {
+        padding: 10px 20px;
+        font-size: 0.5rem;
+    }
+
+    /* -----------------ARTICLES SECTION---------------- */
+
+
+    .articles-text-container {
+        padding: 20px;
+    
+    }
+
+    .articles-text-container p:first-child {
+        font-size: 0.6rem;
+    }
+
+    .articles-text-container h4 {
+        padding: 10px 0 10px 0;
+        font-size: 0.9rem;
+    }
+
+    .articles-text-container p:nth-child(3) {
+        font-size: 0.6rem;
+    }
+
+    .articles-text-container a {
+        font-size: 0.5rem;
+    }
+
+    /* ----------------DISCOVER SECTION----------------- */  
+
+    .discover-section div p {
+        font-size: 1rem;
+        width: max-content;
+    }
+
+    .discover-section div a {
+        font-size: 0.5rem;
+        padding: 8px 20px
+    }
+
+    /* ----------------PACKAGES SECTION----------------- */
+    
+    .packages-container {
+        flex-direction: column;
+        padding-top: 50px;
+    }
+
+    .packages-item:nth-child(1) {
+        padding: 20px;
+    }
+
+    .packages-item:nth-child(2) {
+        padding: 20px;
+    }
+
+    .packages-item:nth-child(3) {
+        padding: 20px;
+    }
+
     /* ------------------FOOTER SECTION----------------- */
     .footer-item:nth-child(1) {
         flex-basis: 100%;

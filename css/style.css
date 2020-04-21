@@ -439,6 +439,7 @@ header {
     position: relative;
     margin: 50px 0;
 }
+
 .video-container {
     height: 100%;
     width: 100%;
@@ -685,8 +686,6 @@ video {
     display: flex;
     flex-direction: column;
     padding: 20px;
-    
-    
 }
 
 .packages-image-container {
