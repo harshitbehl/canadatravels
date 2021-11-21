@@ -107,6 +107,7 @@ h2::after {
 header {
   height: 100vh;
   background-size: cover;
+  -webkit-background-size: cover;
   background-position: center;
   background-attachment: fixed;
   animation-name: backgroundChange;
